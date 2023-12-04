@@ -1,0 +1,104 @@
+/* Base */
+body {
+    background-color: #0a0a0a; /* Dark background */
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container */
+  .container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #1c1c1c; /* Slightly lighter dark shade for the container */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Soft shadow for depth */
+  }
+  
+  /* Headers */
+  header h1 {
+    color: #9c27b0; /* Purple for titles */
+    font-size: 2.5rem;
+  }
+  
+  header p, footer p {
+    color: #d6d6d6; /* Lighter grey for less important text */
+    margin-bottom: 2rem;
+  }
+  
+  /* Section Titles */
+  h2 {
+    color: #9c27b0;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #9c27b0; /* Purple bottom border for headers */
+  }
+  
+  /* List Styles */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    background-color: #252525; /* Even darker background for list items */
+    margin: 0.5rem 0;
+    padding: 0.75rem;
+    border-radius: 4px;
+  }
+  
+  /* Links */
+  a {
+    color: #9c27b0;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    border-top: 1px solid #333; /* Subtle border for footer */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      width: auto;
+      margin: 20px;
+    }
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .profile-picture {
+    width: 150px; /* or your preferred size */
+    height: auto; /* maintain aspect ratio */
+    border-radius: 50%; /* circular profile picture */
+    margin-left: 20px; /* spacing between text and picture */
+  }
+  
+  /* ... existing styles ... */
+  
+  @media (max-width: 768px) {
+    .header-content {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .profile-picture {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  }
+  
